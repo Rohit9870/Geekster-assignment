@@ -1,0 +1,23 @@
+package swap;
+import java.util.Scanner;
+public class swap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Enter two number : ");
+		System.out.println("a = ");
+		int a = scn.nextInt();
+		System.out.println("b = ");
+		int b = scn.nextInt();
+		System.out.println("before swapping ");
+		System.out.println("a = "+a+ " and b = "+b);
+		int temp;
+		temp = a;
+		a = b;
+		b = temp;
+		System.out.println("after swapping ");
+		System.out.println("a = "+a+" and b = "+b);
+	}
+
+}
