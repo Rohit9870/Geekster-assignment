@@ -1,0 +1,23 @@
+import java.util.*;
+public class factorial_using_do_while {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n;
+        int fact=1;
+        char ch;
+        do{
+            System.out.println("Enter the value of n ");
+            n = scn.nextInt();
+            for(int i=1;i<=n;i++){
+                fact = fact * i;
+            }
+            System.out.println("Factorial of "+n +" is "+fact);
+            System.out.println("Do you want to continue (y/n)");
+            ch = scn.next().charAt(0);
+            fact = 1;
+
+
+        }while(ch=='y');
+    }
+    
+}
