@@ -1,0 +1,29 @@
+import java.util.*;
+public class NumberOfDigit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int num = n;
+        int count=0;
+        if(num==0){
+            count++;
+        }
+        else{
+            while(num>0){
+                num = num / 10;
+                count++;
+            }
+
+        }
+        if(count>0 && count<=5){
+            System.out.println("number of digits in "+n+" is "+count);
+        }
+        else{
+            System.out.println("number of digits in "+n+" is more than 5");
+        }
+        
+        
+
+    }
+    
+}
